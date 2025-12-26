@@ -1,4 +1,4 @@
-# Вариант 10:
+# 10 Вариант
 import time
 def memoize(func):
     """Декоратор для кэширования результатов функции."""
@@ -36,5 +36,5 @@ result2 = factorial(n)
 time2 = time.time() - start
 print(f"Результат: {result2}")
 print(f"Время второго вызова: {time2:.6f} сек\n")
-# Проверика
+# Проверка
 assert result1 == result2, "Результаты не совпадают!"
