@@ -22,14 +22,14 @@ def factorial(n):
         return 1
     return n * factorial(n - 1)
 n = 10
-# Первый вызов — вычисление
+# Первый вызов - вычисление
 print("=== Первый вызов ===")
 start = time.time()
 result1 = factorial(n)
 time1 = time.time() - start
 print(f"Результат: {result1}")
 print(f"Время первого вызова: {time1:.6f} сек\n")
-# 2-ой вызов — из кэша
+# 2-ой вызов - из кэша
 print("=== Второй вызов (тот же n) ===")
 start = time.time()
 result2 = factorial(n)
